@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Поиск минимального и максимального числа</h1>
+    <p class="all-elements"></p>
+    <button class="min">Найти минимальное число</button>
+    <button class="max">Найти максимальное число</button>
+    <p>Минимальное число: <span class="minNumber"></span></p>
+    <p>Максимальное число: <span class="maxNumber"></span></p>
+    <script>
+        let pAllElements = document.querySelector('.all-elements');
+        let elements = [12, 5, 8, 20, 3, 16]
+        for (const element of elements) {
+            pAllElements.textContent += `${element}, `
+        }
+        let minEl = document.querySelector('.min');
+        let maxEl = document.querySelector('.max');
+        let minNumber = document.querySelector('.minNumber');
+        let maxNumber = document.querySelector('.maxNumber');
+
+        minEl.onclick = function () {
+            let minimum = Math.min(...elements)
+            minNumber.textContent = minimum
+        }
+
+        maxEl.onclick = function () {
+            let maximum = Math.max(...elements)
+            maxNumber.textContent = maximum
+        }
+    </script>
+
+</body>
+</html>
