@@ -1,0 +1,24 @@
+.bookBtn {
+    background-color: rgb(10, 185, 10);
+    border: 0cap;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+}
+
+.findBtn {
+    background-color: blue;
+    border: 0cap;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+}
+
+.bookList {
+    padding-left: 15px;
+}
+
+.search {
+    background-color: yellow;
+    width: 100px;
+}
