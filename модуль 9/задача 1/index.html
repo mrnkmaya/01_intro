@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const cars = {
+            BMW: {
+                name: 'BMW',
+                wheels: 4,
+                doors: 4,
+                isStarted: false,
+                hp: 120
+            },
+            Audi: {
+                name: 'Audi',
+                wheels: 4,
+                doors: 2,
+                isStarted: false,
+                hp: 240
+            },
+
+            Mercedes: {
+                name: 'Mercedes',
+                wheels: 4,
+                doors: 4,
+                isStarted: false,
+                hp: 180
+            }
+
+        }
+
+        function getCar(carName){
+            if (cars[carName]){
+                console.log(cars[carName]);
+            } else {
+                alert('Авто не найдено')
+            }
+        }
+
+        getCar('BMW')
+    </script>
+</body>
+</html>
