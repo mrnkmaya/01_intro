@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Форма опроса</h1>
+    <form class="survey-form" action="#" method="get">
+    <div class="form-group">
+        <label>
+            Имя пользователя:
+            <input class="name" type="text" name="text" placeholder="Введите ваше имя" required></input>
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            Email:
+            <input class="email" type="email" name="email" required></input>
+        </label>
+    </div>
+    <div class="">
+        <label>
+            Пол:
+            <input type="radio" name="gender" value="Мужской">Мужской</input>
+        </label>
+        <label>
+            <input type="radio" name="gender" value="Женский">Женский</input>
+        </label>
+    </div>
+    <div class="user-rating">
+    <label>
+        Оценка сервиса:
+        <input class="rating" type="range" name="range" min="1" max="10"></input>
+    </label>
+    </div>
+
+    <div class="user-interests">
+    <label>
+        Интересы пользователя:
+        <div>
+            <input type="checkbox" name="checkbox" class="interests" value="Спорт">Спорт</input>
+        </div>
+        <div>
+            <input type="checkbox" name="checkbox" class="interests" value="Музыка">Музыка</input>
+        </div>
+        <div>
+            <input type="checkbox" name="checkbox" class="interests" value="Путешествия">Путешествия</input>
+        </div>
+        <div>
+            <input type="checkbox" name="checkbox" class="interests" value="Кино">Кино</input>
+        </div>
+    </label>
+    </div>
+    <div>
+        <p>Дополнительные комментарии:</p>
+        <label>
+            <textarea rows="4" class="comments"></textarea>
+        </label>
+    </div>
+    <div class="submit">
+        <input type="submit" name="submit"></input>
+    </div>
+    </form>
+
+    <div class="results" style="display: none;"></div>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
