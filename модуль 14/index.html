@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="form">
+        <div class="form-wrap">
+            <label>Название</label> <br>
+            <input name="title" class="title" type="text" > <br>
+        </div>
+        <div>
+            <label>Жанр</label> <br>
+            <input name="genre" class="genre" type="text" > <br>
+        </div>
+        <div>
+            <label>Год:</label> <br>
+            <input name="release" class="release" type="text" > <br>
+        </div> 
+        <div>
+            <input name="isWatched" class="isWatched" type="checkbox" > <br>
+            <label>Успели посмотреть?</label> <br>
+        </div>
+        <button type="submit">Добавить</button> 
+        <div class="edit-actions" style="display: none;">
+            <button type="button" class="update-btn">Обновить</button>
+            <button type="button" class="cancel-btn">Отмена</button>
+        </div>       
+    </form>
+    <div class="sort-wrap">
+        <label for="sort">Сортировать по:</label>
+        <select id="sort">
+            <option value="title">Название</option>
+            <option value="genre">Жанр</option>
+            <option value="release">Год</option>
+        </select>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>Жанр</th>
+                <th>Год</th>
+                <th>Успели посмотреть?</th>
+                <th>Действие</th>
+            </tr>
+        </thead>
+        <tbody class="film-tbody">
+        </tbody>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>
