@@ -1,0 +1,25 @@
+#progress-container {
+    width: 500px;
+    height: 20px;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+#progress-bar {
+    width: 100%;
+    height: 100%;
+    background-color: #4caf50;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: linear;
+}
+
+#timer {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-top: 10px;
+}
